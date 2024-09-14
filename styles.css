@@ -1,0 +1,357 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+section {
+    padding: 40px 0;
+    padding: 60px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: #002366;
+    color: white;
+    padding: 20px 0;
+}
+
+header .logo h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a:hover {
+    color: #FFC107;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 120px; /* Adjust according to your design */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('Documents/Leadership\ 2.jpg'); /* Replace with your image path */
+    background-size: cover; /* This makes sure the image covers the whole section */
+    background-position: center; /* This centers the image */
+    text-align: center;
+    padding: 50px 0;
+    color: white; /* Ensures text remains readable */
+    position: relative;
+}
+
+/* Add a semi-transparent overlay for better text readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 128, 0.6); /* Adjust transparency and color */
+    z-index: 1;
+}
+
+/* Style content to be above the overlay */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.hero .btn-primary {
+    background-color: #FFC107;
+    color: #002366;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* About Me Section */
+.about-me {
+    background-color: #E5E5E5;
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-pic {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.bio {
+    max-width: 600px;
+}
+
+.bio h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+}
+
+.bio p {
+    font-size: 18px;
+}
+
+.btn-secondary {
+    background-color: #008080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Skills Section */
+.skills {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-item h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 28px;
+    color: #002366;
+}
+
+.progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    height: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.progress {
+    background-color: #008080;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.project-item img {
+    max-width: 300px;
+    height: auto;
+}
+
+.project-item p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Blog Section */
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #E5E5E5;
+    margin: 20px;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h4 {
+    color: #002366;
+    font-family: 'Merriweather', serif;
+}
+
+.blog-post p {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+}
+
+.blog-post a {
+    color: #008080;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+.blog-post, .project-card {
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
+
+    
+}
+
+.blog-post:hover, .project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    background-color: #E5E5E5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact input, .contact textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.contact .btn-primary {
+    background-color: #FFC107;
+    color: #002366;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background-color: #002366;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #FFC107;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer p{
+    color: #FFC107;
+}
+footer a:hover {
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
+/* Additional effect - Button Section */
+.btn {
+    background-color: #008080;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #FFC107;
+}
+.btn, .btn-primary, .btn-secondary {
+    padding: 12px 24px;
+}
+
+/* Additional effect - Font Family*/
+h1, h2, h3 {
+    font-family: 'Merriweather', serif, Georgia, 'Times New Roman';
+}
+p, a, li {
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: #002366;
+    line-height: 1.3;
+}
+
+p, a, li {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .blog-section {
+        flex-direction: column;
+    }
+
+    .project-card, .blog-post {
+        width: 100%;
+    }
+}
