@@ -19,7 +19,7 @@ This is a personal portfolio project for **Afolabi Shyllon** created as part of 
 - **Git & GitHub**
 
 ## How to Access the Project
-- The project is hosted on **[GitHub Pages / Netlify]** ().
+- The project is hosted on **[ Netlify ]** (https://jolly-dolphin-d6b68b.netlify.app/).
   
 ## Installation Instructions (For Local Deployment)
 1. Clone the repository:
