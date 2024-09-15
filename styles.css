@@ -1,4 +1,4 @@
-/* Base styles */
+/*This is my root styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -16,21 +16,22 @@ html {
     scroll-behavior: smooth;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-}
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Header */
+/* This is my header section */
 header {
     background-color: #002366;
     color: white;
     padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .logo h2 {
@@ -55,17 +56,17 @@ nav a {
 }
 
 .logo img {
-    width: 120px; /* Adjust according to your design */
+    width: 120px; 
 }
 
-/* Hero Section */
+/* This is my hero section */
 .hero {
-    background-image: url('Documents/Leadership\ 2.jpg'); /* Replace with your image path */
+    background-image: url('Documents/Leadership\ 2.jpg'); /* This replace with image path */
     background-size: cover; /* This makes sure the image covers the whole section */
-    background-position: center; /* This centers the image */
+    background-position: center; 
     text-align: center;
     padding: 50px 0;
-    color: white; /* Ensures text remains readable */
+    color: white; /* This ensures text remains readable */
     position: relative;
 }
 
@@ -106,16 +107,28 @@ nav a {
     z-index: 2;
 }
 
-/* About Me Section */
+/* This is my about me section */
 .about-me {
     background-color: #E5E5E5;
     padding: 50px 0;
 }
 
+.container h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+    text-align: center; 
+}
+
 .about-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.about-content img {
+    float: left;
+    margin-right: 20px;
+    width: 150px; 
+    border-radius: 50%; 
 }
 
 .profile-pic {
@@ -124,12 +137,7 @@ nav a {
 }
 
 .bio {
-    max-width: 600px;
-}
-
-.bio h3 {
-    font-family: 'Merriweather', serif;
-    font-size: 36px;
+    max-width: 1200px;
 }
 
 .bio p {
@@ -142,10 +150,39 @@ nav a {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    display: block; 
+    margin: 20px auto;
 }
 
-/* Skills Section */
-.skills {
+/*This is my skills section */
+.skill-item ul li {
+    list-style: none;
+    padding-bottom: 15px;
+    display: block; 
+  }
+  
+  .skill-item i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #FFC107;
+  }
+  
+  .skill-item .progress-bar {
+    display: block; 
+    margin-top: 10px; 
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    width: 100%; 
+  }
+  
+  .skill-item .progress {
+    background-color: #008080;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .skills {
     background-color: white;
     padding: 50px 0;
     text-align: center;
@@ -176,7 +213,7 @@ nav a {
     border-radius: 20px;
 }
 
-/* Projects Section */
+/* This is my projects section */
 .projects {
     padding: 50px 0;
     background-color: #f5f5f5;
@@ -198,7 +235,7 @@ nav a {
     text-align: center;
 }
 
-/* Blog Section */
+/* This is my blog section */
 .blog-section {
     display: flex;
     flex-direction: column;
@@ -248,7 +285,7 @@ nav a {
     transform: scale(1.05);
 }
 
-/* Contact Section */
+/*This is my contact section */
 .contact {
     background-color: #E5E5E5;
     padding: 50px 0;
@@ -270,13 +307,18 @@ nav a {
     cursor: pointer;
 }
 
-/* Footer */
+/* This is my footer section */
 
 footer {
     background-color: #002366;
-    color: #fff;
     padding: 30px 0;
     text-align: center;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
 
 footer a {

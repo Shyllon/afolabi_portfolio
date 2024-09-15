@@ -6,19 +6,21 @@
     <title>Afolabi Shyllon's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <img src="image.jpg" loading="lazy" alt="Project Image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 </head>
 <body>
     <header>
         <div class="container header-content">
             <div class="logo">
-                <img src="Documents/Afolabi Brand01.jpg.png" alt="Logo" />
+                <img src="Documents/Afolabi Brand01.jpg.png" loading="lazy" alt="Project Image" width="200">
             </div>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -36,10 +38,10 @@
 
     <section class="about-me">
         <div class="container">
+            <h3>About Me</h3>
             <div class="about-content">
                 <img src="Documents/Afolabi Profile Picture1.jpg" alt="Afolabi Profile" class="profile-pic">
                 <div class="bio">
-                    <h3>About Me</h3>
                     <p>I am <strong>Afolabi Shyllon,</strong> a passionate leader, strategist, and developer who is committed to leveraging technology to build better futures and drive impact. With over 7 years of experience in various roles across school administration, media, communications, and project management, I have honed a broad set of skills that allows me to seamlessly combine leadership, technical expertise, and creativity.</p>
                     <p>My academic journey began with a <strong>National Certificate in Education (NCE) in English/Yoruba,</strong> which provided me with the pedagogical foundation to positively impact lives through education. This training allowed me to refine my teaching approach and laid the groundwork for my future leadership roles, equipping me to inspire and guide others effectively.</p>
                     <p>Building on this, I pursued a <strong>Bachelor’s degree in History and Diplomatic Studies</strong> and a <strong>Master’s degree in History and Strategic Studies,</strong> where I gained a deeper understanding of societal structures and strategies for development. This knowledge has been instrumental in my work across various sectors, where I focus on addressing educational and community challenges.</p>
@@ -53,7 +55,9 @@
                     <p>Now, I am on a mission to blend my leadership abilities with my technical prowess as a <strong>full-stack developer.</strong> I have honed my skills in <strong>HTML, CSS, JavaScript, Python, AI/Machine Learning</strong> and <strong>SQL,</strong> and I have built model-driven and canvas apps using <strong>low-code platforms.</strong> I am particularly passionate about using technology to <strong>build better futures</strong> and foster greater access to opportunities, with a strong focus on women, youth, and environmental sustainability.</p>
                     <p>Outside of work, you will often find me reading, traveling, or playing board games. I am always excited to collaborate, explore new ideas, and push the boundaries of what is possible.</p>
                     
-                    <button class="btn-secondary">Download CV</button>
+                    <button class="btn-secondary">
+                        <a href="Documents/Afolabi_SHYLLON_Tech_2024.pdf" download>Download CV</a>
+                      </button>                    
                 </div>
             </div>
         </div>
@@ -66,63 +70,119 @@
                 <div class="skill-item">
                     <h4>Technical Skills</h4>
                     <ul>
-                        <li>HTML<div class="progress-bar">
-                            <div class="progress" style="width: 90%;"></div> 
-                        </div></li><br>
-                        <li>CSS<div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div></li><br>
-                        <li>JavaScript<div class="progress-bar">
-                            <div class="progress" style="width: 40%;"></div>
-                        </div></li><br>
-                        <li>Python<div class="progress-bar">
-                            <div class="progress" style="width: 50%;"></div>
-                        </div></li><br>
-                        <li>AI/Machine Learning<div class="progress-bar">
-                            <div class="progress" style="width: 55%;"></div>
-                        </div></li><br>
-                        <li>SQL<div class="progress-bar">
-                            <div class="progress" style="width: 50%;"></div>
-                        </div></li>
+                        <li>
+                            <i class="fab fa-html5"></i> HTML
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </li><br>
+                
+                        <li>
+                            <i class="fab fa-css3-alt"></i> CSS
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </li><br>
+                
+                        <li>
+                            <i class="fab fa-js"></i> JavaScript
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 40%;"></div>
+                            </div>
+                        </li><br>
+                
+                        <li>
+                            <i class="fab fa-python"></i> Python
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 40%;"></div>
+                            </div>
+                        </li><br>
+                
+                        <li>
+                            <i class="devicon-mysql-plain"></i> MySQL
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%;"></div>
+                            </div>
+                        </li><br>
+                            
+                        <li>
+                            <i class="fab fa-react"></i> React
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%;"></div>
+                            </div>
+                        </li> <br>
+
+                        <li>
+                            <i class="devicon-git-plain"></i> Git
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-
+                
                 <div class="skill-item">
                     <h4>Leadership Skills</h4>
                     <ul>
-                        <li>Team Management<div class="progress-bar">
-                            <div class="progress" style="width: 90%;"></div>
-                        </div></li><br>
-                        <li>Project Planning<div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div></li><br>
-                        <li>Strategic Leadership<div class="progress-bar">
-                            <div class="progress" style="width: 85%;"></div>
-                        </div></li>
+                        <li>
+                            <i class="fas fa-users"></i> Team Management
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </li><br>
+
+                        <li>
+                            <i class="fas fa-clipboard-check"></i> Project Planning
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </li><br>
+
+                        <li>
+                            <i class="fas fa-chess-king"></i> Strategic Leadership
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 
                 <div class="skill-item">
                     <h4>Digital Marketing</h4>
                     <ul>
-                        <li>SEO<div class="progress-bar">
-                            <div class="progress" style="width: 70%;"></div>
-                        </div></li><br>
-                        <li>Content Creation<div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div></li><br>
-                        <li>Social Media Management<div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div></li><br>
-                        <li>Graphic Design<div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div></li><br>
-                        <li>Copy Writing<div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div></li> 
+                      <li>
+                        <i class="fas fa-search"></i> SEO
+                        <div class="progress-bar">
+                          <div class="progress" style="width: 70%;"></div>
+                        </div>
+                      </li><br>
+                      <li>
+                        <i class="fas fa-pencil-alt"></i> Content Creation
+                        <div class="progress-bar">
+                          <div class="progress" style="width: 80%;"></div>
+                        </div>
+                      </li><br>
+                      <li>
+                        <i class="fas fa-share-alt"></i> Social Media Management
+                        <div class="progress-bar">
+                          <div class="progress" style="width: 80%;"></div>
+                        </div>
+                      </li><br>
+                      <li>
+                        <i class="fas fa-paint-brush"></i> Graphic Design
+                        <div class="progress-bar">
+                          <div class="progress" style="width: 80%;"></div>
+                        </div>
+                      </li><br>
+                      <li>
+                        <i class="fas fa-pen-fancy"></i> Copywriting
+                        <div class="progress-bar">
+                          <div class="progress" style="width: 80%;"></div>
+                        </div>
+                      </li>
                     </ul>
                 </div>
-            </div>
+            </div>                  
         </div>
 
     <section class="projects">
@@ -182,9 +242,11 @@
         <div class="container">
             <p>&copy; 2024 Afolabi Shyllon. All Rights Reserved.</p>
             <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/afolabi-shyllon-bb6402246" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.github.com/Shyllon" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.x.com/AfolabiShyllon" target="_blank">Twitter</a></li>
+                </ul>
             </div>
         </div>
     </footer>
