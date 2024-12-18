@@ -14,6 +14,7 @@ This is a personal portfolio project for **Afolabi Shyllon** created as part of 
 - **HTML**
 - **CSS**
 - **JavaScript**
+- **Express for RESTFUL API**
 - **Font Awesome Icons**
 - **Devicons**
 - **Git & GitHub**

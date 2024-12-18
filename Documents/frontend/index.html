@@ -13,7 +13,7 @@
     <header>
         <div class="container header-content">
             <div class="logo">
-                <img src="Documents/Afolabi Brand01.jpg.png" loading="lazy" alt="Project Image" width="200">
+                <img src="assets/Afolabi Brand01.jpg.png" loading="lazy" alt="Project Image" width="200">
             </div>
             <nav>
                 <ul>
@@ -28,21 +28,21 @@
     </header>
     
 
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero-content">
             <h1>Afolabi Shyllon</h1>
             <p>Building Better Futures Through Empowerment and Innovation</p>
-            <button class="btn-primary">Explore My Work</button>
+            <a href="#projects" class="btn-primary">Explore My Work</a>
         </div>
     </section>
-
-    <section class="about-me">
-        <div class="container">
+    
+    <section id="about" class="about-me">
+        <div class="bio">
             <h3>About Me</h3>
             <div class="about-content">
-                <img src="Documents/Afolabi Profile Picture1.jpg" alt="Afolabi Profile" class="profile-pic">
+                <img src="assets/Afolabi Profile Picture1.jpg" alt="Afolabi Profile" class="profile-pic">
                 <div class="bio">
-                    <p>I am <strong>Afolabi Shyllon,</strong> a passionate leader, strategist, and developer who is committed to leveraging technology to build better futures and drive impact. With over 7 years of experience in various roles across school administration, media, communications, and project management, I have honed a broad set of skills that allows me to seamlessly combine leadership, technical expertise, and creativity.</p>
+                    <p>I am <strong>Afolabi Shyllon,</strong> a passionate leader, strategist, and developer who is committed to leveraging technology to build better futures and drive impact. With over 8 years of experience in various roles across school administration, media, communications, and project management, I have honed a broad set of skills that allows me to seamlessly combine leadership, technical expertise, and creativity.</p>
                     <p>My academic journey began with a <strong>National Certificate in Education (NCE) in English/Yoruba,</strong> which provided me with the pedagogical foundation to positively impact lives through education. This training allowed me to refine my teaching approach and laid the groundwork for my future leadership roles, equipping me to inspire and guide others effectively.</p>
                     <p>Building on this, I pursued a <strong>Bachelor’s degree in History and Diplomatic Studies</strong> and a <strong>Master’s degree in History and Strategic Studies,</strong> where I gained a deeper understanding of societal structures and strategies for development. This knowledge has been instrumental in my work across various sectors, where I focus on addressing educational and community challenges.</p>
                     <p>From serving as the <strong>Class Governor</strong> during my undergraduate days to leading impactful community-driven initiatives during my<strong> National Youth Service</strong> in Cross River State, I have always been driven by a desire to inspire and contribute meaningfully. I spearheaded projects such as the construction of a community roundabout and organized excursions to expose students to new possibilities, earning me a <strong>State Recognition Award</strong> for outstanding service.</p>
@@ -56,14 +56,14 @@
                     <p>Outside of work, you will often find me reading, traveling, or playing board games. I am always excited to collaborate, explore new ideas, and push the boundaries of what is possible.</p>
                     
                     <button class="btn-secondary">
-                        <a href="Documents/Afolabi_SHYLLON_Tech_2024.pdf" download>Download CV</a>
+                        <a href="assets/Afolabi_SHYLLON_Tech_2024.pdf" download>Download CV</a>
                       </button>                    
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">    
         <div class="container">
             <h3>Skills</h3>
             <div class="skills-grid">
@@ -184,29 +184,30 @@
                 </div>
             </div>                  
         </div>
-
-    <section class="projects">
+    </section>
+    
+    <section id="projects" class="projects">
         <div class="container">
             <h3>Projects</h3>
             <div class="projects-grid">
                 <div class="project-item">
-                    <img src="Documents/Power-up Challenge.png" alt="Project 1">
+                    <img src="assets/Power-up Challenge.png" alt="Project 1">
                     <p>Final Project submission in the <strong>Microsoft Power-up Challenge</strong> using low-code technology</p>
                 </div>
                 <div class="project-item">
-                    <img src="Documents/Sign-Up Page.png" alt="Project 2">
+                    <img src="assets/Sign-Up Page.png" alt="Project 2">
                     <p>Created a <strong> Sign-Up Form </strong> using HTML and CSS</p>
                 </div>
                 <div class="project-item">
-                    <img src="Documents/Resident Management System.png" alt="Project 3">
+                    <img src="assets/Resident Management System.png" alt="Project 3">
                     <p>Created a <strong>Resident Management System</strong> using HTML, CSS and JavaScript</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="blog" class="blog-section">
     <h3>Blog</h3>
-    <div class="blog-section">
         <div class="blog-post">
             <h4>Embracing Technology for Community Growth</h4>
             <p>Technology is not just a tool for convenience; it's an enabler of growth and opportunity for communities. In this post, I explore how integrating technology in local projects has created a positive impact...</p>
@@ -225,18 +226,25 @@
             <a href="#">Read More</a>
         </div>
     </div>
-        
-    <section class="contact">
-        <div class="container">
-            <h3>Contact Me</h3>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to send me a message using the form below:</p>
+            <form id="contact-form" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn-primary">Send Message</button>
             </form>
-        </div>
+        </div>    
     </section>
+    
+    <!-- Spinner and Feedback Container -->
+    <div id="spinner" style="display: none;">Loading...</div>
+    <div id="feedback-container" style="display: none;"></div>
 
     <footer>
         <div class="container">
@@ -250,5 +258,6 @@
             </div>
         </div>
     </footer>
+    <script src="formSubmission.js"></script>
 </body>
 </html>
